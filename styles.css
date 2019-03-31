@@ -1,0 +1,382 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html body {
+    font-family: 'Muli', sans-serif;
+}
+
+p {
+    color: rgb(166,150,146);
+}
+
+
+
+
+
+/**
+* Header-Bereich
+*/
+.header {
+    height: 150px;
+    background-size: cover;
+    background-color: white;
+}
+
+.header-navbar-links {
+    color: rgb(166,150,146);
+    float: right;
+    margin-top: 50px;
+
+}
+
+@media (max-width:673px) {
+    .header-navbar-links {
+        margin-top:30px;
+    }
+}
+.header-navbar-links a{
+    color: rgb(166,150,146);
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 150%;        
+}
+
+
+#header-navbar-links a:hover {
+    text-decoration: none;
+    color: rgb(141, 51, 51);
+}
+
+
+
+.header-navbar-links li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+@media (max-width:673px) {
+    .header-navbar-links li{
+        float: none;
+    }
+}
+
+.header-brand-wrapper {
+    margin-top: 60px;
+    float: left;
+    font-weight:bold;
+    line-height: 1;
+    position: relative;
+    bottom: 29px;
+    
+}
+
+.brunner {
+    position: relative;
+    left: 12px;
+}
+
+.header-brand {
+    color: rgb(141, 51, 51);
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 260%;
+    display: block;
+    margin-bottom: 50px;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
+.header-brand:hover {
+    color:rgb(166,150,146);
+}
+
+
+
+.bild-slogan {
+    background-image: url("img/holzhandgravur.jpg");
+    background-size: cover;
+    background-position: 50% 60%;
+    height: 100vh;
+    background-attachment: fixed;
+
+
+}
+
+@media (max-width:673px) {
+    .bild-slogan {
+        margin-top: 30px;
+    }
+}
+.bild-slogan-text {
+    color: rgb(166,150,146);
+    font-weight: lighter;
+    font-family: 'Poiret One', cursive;
+    font-size: 600%;
+    text-align: center;
+    padding-top: 17%;
+
+}
+@media (max-width:884px) {
+    .bild-slogan-text {
+        font-size: 450%;
+    }
+}
+
+
+/**
+* Services
+**/
+
+
+.services {
+    background-color: rgb(white);
+    padding-top: 80px;
+    
+}
+.services a {
+    text-decoration: none;
+}
+
+
+
+.services .container {
+    background-color:rgb(white);
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 100px;
+    
+}
+
+
+
+.services-title {
+    color: rgb(166,150,146);
+    text-align: center;
+    transition: color 0.2s ease-in;
+}
+
+.services-title:hover {
+    color: rgb(141, 51, 51);
+}
+
+
+
+.services-image-foto {
+    max-width: 100%;
+      
+}
+
+@media (max-width:500px) {
+    .services-image {
+        display: none;
+    }
+}
+
+.services hr {
+    margin-top:50px;
+    color: rgb(166,150,146);
+}
+
+/**
+* Mitarbeiter /Team
+*/
+
+.team {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(166,150,146);
+    color: white;
+}
+.team-heading {
+    font-weight: lighter;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+.team-subheading {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+.team-image-container{
+    text-align: center;
+}
+.mitarbeiterfoto {
+    max-width: 52%;
+   
+    border-radius: 10000px;
+    border: 5px solid rgb(255, 255, 255);
+}
+.mitarbeiername{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+
+}
+.mitarbeiterberuf {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+
+}
+
+.schlusstext{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    color: white;
+
+}
+
+/**
+* Kontakt
+*/
+
+.contact {
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: rgb(141, 51, 51);
+}
+.contact .container {
+    margin-bottom: 0px;
+}
+.contact-heading {
+    margin-bottom:15px;
+    font-weight: lighter;
+
+}
+.contact-subheading {
+    color:rgb(141, 51, 51);
+    font-weight: lighter;
+    margin-bottom: 50px;
+
+}
+.contact-methods {
+    color: rgb(141, 51, 51);
+    list-style-type: none;
+    
+}
+.contact-methods li{
+    width: 100%;
+    font-weight: lighter;
+    height: 2.5em;
+
+
+}
+.contact-methods li .fa {
+    font-size: 150%;
+}
+.contact-icon {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+
+.contact-adress {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.contact-adress p,
+.contact-öffnungszeiten p {
+    color: rgb(141, 51, 51);
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+.contact-input {
+    width: 100%;
+    margin-bottom: 27px;
+    color: black;
+    background-color: white;
+    
+}
+
+.contact-input:focus,
+input.contact-input:focus {
+border: 1px solid #1e1e1e;
+background-color: rgba(166, 150, 146, 0.329);
+}
+
+.contact-message {
+height: 140px;
+}
+
+.contact-form {
+margin-bottom: 0px;
+}
+
+.contact-submit {
+margin-bottom: 0px;
+background-color: rgb(141, 51, 51);
+}
+
+.contact-submit:hover,
+input.contact-submit:hover {
+border: 1px solid #1e1e1e;
+background-color: rgb(166,150,146);
+}
+
+.google-karte {
+    margin-top: 60px;
+}
+
+.google-karte2 {
+    margin-top: 40px;
+}
+
+/*@media (min-width:550) {
+    .six.columns.contact-column {
+        width: 100%;
+    }
+}*/
+
+@media (max-width:1088px) {
+    .contact-column-karte {
+        display: none;
+    }
+
+    .contact-column {
+        width: 100%;
+    }
+}
+
+@media (min-width:788px) {
+    .google-karte2 {
+        display: none;
+    }
+}
+
+
+
+.footer {
+    background-color:  rgb(255, 255, 255);
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    
+}
+
+.footer p {
+    color: rgb(141, 51, 51);
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(141, 51, 51);
+}
+
+.footer hr {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    color: rgb(141, 51, 51);
+}
+
+.footer .container {
+    margin-bottom: 50px;
+}
