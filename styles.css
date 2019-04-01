@@ -330,12 +330,6 @@ background-color: rgb(166,150,146);
     margin-top: 40px;
 }
 
-/*@media (min-width:550) {
-    .six.columns.contact-column {
-        width: 100%;
-    }
-}*/
-
 @media (max-width:1088px) {
     .contact-column-karte {
         display: none;
