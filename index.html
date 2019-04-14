@@ -10,7 +10,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,300i,400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />    
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    
 </head>
 <body>
     <header class="header">
@@ -37,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="six columns">
-                    <a href="index-gravuren.html" >
+                    <a href="index-gravuren.html">
                         <h4 >Gravuren </h4>
                     </a>
                    
@@ -48,23 +49,35 @@
                     </div>
                      
                 <hr/> 
-                    <h4 class="services-title">Beschriftungen</h4>
+                    <a href="index-gravuren.html">
+                        <h4>Beschriftungen</h4>
+                    </a>
                     <div class="services-image">
-                        <img src="img/handgravur-ringe.jpg" class="services-image-foto" alt="Bild vom Handgravieren">
+                        <a href="index-gravuren.html" >
+                            <img src="img/handgravur-ringe.jpg" class="services-image-foto" alt="Bild vom Handgravieren">
+                        </a>
                     </div> 
                 <hr/>
                 </div>
             
             
                 <div class="six columns">
-                    <h4 class="services-title">Handgravuren</h4>
+                    <a href="index-gravuren.html">
+                        <h4>Handgravuren</h4>
+                    </a>
                     <div class="services-image">
-                        <img src="img/handgravieren.jpg" class="services-image-foto" alt="Bild vom Handgravieren">
+                        <a href="index-gravuren.html">
+                            <img src="img/handgravieren.jpg" class="services-image-foto" alt="Bild vom Handgravieren">
+                        </a>
                     </div> 
                 <hr/>
-                    <h4 class="services-title">Vereinspreise</h4>
+                    <a href="index-gravuren.html">
+                        <h4>Vereinspreise</h4>
+                    </a>
                     <div class="services-image">
-                        <img src="img/stichel.jpg" class="services-image-foto" alt="Bild vom Handgravieren">
+                        <a href="index-gravuren.html">
+                            <img src="img/stichel.jpg" class="services-image-foto" alt="Bild vom Handgravieren">
+                        </a>
                     </div>
                 <hr/> 
                 </div>
@@ -102,9 +115,9 @@
 </div>
 <div class="contact" id="contact">
     <div class="container">
+        <h2 class="contact-heading">Unsere <strong>Kontaktdaten</strong></h2>
         <div class="row">
             <div class="contact-column six columns">
-                <h2 class="contact-heading">Unsere <strong>Kontaktdaten</strong></h2>
                 <p class="contact-subheading">Rufen Sie uns an oder schreiben Sie uns Ihre Nachricht per E-Mail oder  Kontaktformular.</p>
                 <ul class="contact-methods">
                     <li>
@@ -131,8 +144,10 @@
                     <p>Rainstrasse 17</p>
                     <p>6063 Stalden (Sarnen)</p>
                 </div>  
+            </div>
+            
+            <div class="six columns">
 
-                
                 <form class="contact-form" action="https://formspree.io/brunner.manu@hotmail.com" method="POST">
                     <input class="contact-input" type="text" name="name" placeholder="Name und Vorname *" required />
                     <input class="contact-input" type="email" name="email" placeholder="E-Mail *" required/>
@@ -140,18 +155,30 @@
                     <input class="contact-submit" type="submit" value="senden"/>
                 </form>
 
-                <div class="google-karte2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.7714505020144!2d8.207095215329225!3d46.8875446453647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ff278e2b8b447%3A0x275e66d6fe0c9f62!2sRainstrasse+17%2C+6063+Sarnen!5e0!3m2!1sde!2sch!4v1547890063176" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>    
-                </div> 
-            </div>
             
-            
-            <div class="six columns contact-column-karte">
-                <div class="google-karte">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.7714505020144!2d8.207095215329225!3d46.8875446453647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ff278e2b8b447%3A0x275e66d6fe0c9f62!2sRainstrasse+17%2C+6063+Sarnen!5e0!3m2!1sde!2sch!4v1547890063176" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>    
-                </div>            
+                <div id="simpleModal" class="modal">
+                    <div class="modalContent">
+                        <div class="modalHeader">
+                            <span class="closeButton">&times;</span>
+                            <h3>Gravuren Brunner zieht um!</h3>
+                        </div>
+                        <div class="modalBody">
+                            <p>Bitte beachten Sie ab 01.01.9999 unsere NEUE Adresse:</p>
+                            <p class="adress">Rainstrasse 17</p>
+                            <p class="adress">6063 Stalden</p>
+                        </div>
+                        <div class="modalFooter">
+                            
+                        </div>
+                    </div>
+                </div>        
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="google-karte">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.7714505020144!2d8.207095215329225!3d46.8875446453647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ff278e2b8b447%3A0x275e66d6fe0c9f62!2sRainstrasse+17%2C+6063+Sarnen!5e0!3m2!1sde!2sch!4v1547890063176" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>    
+        </div>            
     </div>
 </div>
     <div class="footer">
@@ -160,6 +187,10 @@
             <a href="#">nach oben</a>
         </div>
     </div>
+
+
+<script src="main.js" type="text/javascript"></script>
+
 </body>
 </html>
     

@@ -74,7 +74,7 @@ p {
 
 .brunner {
     position: relative;
-    left: 12px;
+    left: 10.5px;
 }
 
 .header-brand {
@@ -114,12 +114,13 @@ p {
     font-family: 'Poiret One', cursive;
     font-size: 600%;
     text-align: center;
-    padding-top: 17%;
+    padding-top: 20%;
 
 }
 @media (max-width:884px) {
     .bild-slogan-text {
         font-size: 450%;
+        padding-top: 220px;
     }
 }
 
@@ -136,6 +137,13 @@ p {
 }
 .services a {
     text-decoration: none;
+    color: rgb(166,150,146);
+    text-align: center;
+    transition: color 0.3s ease-in;
+}
+
+.services a:hover {
+    color: rgb(141, 51, 51);
 }
 
 
@@ -148,22 +156,17 @@ p {
 }
 
 
-
+/**
+*.services-title nur für Neben-Seiten
+**/
 .services-title {
     color: rgb(166,150,146);
     text-align: center;
     transition: color 0.2s ease-in;
 }
 
-.services-title:hover {
-    color: rgb(141, 51, 51);
-}
-
-
-
 .services-image-foto {
     max-width: 100%;
-      
 }
 
 @media (max-width:500px) {
@@ -278,6 +281,12 @@ p {
     text-align: center;
 }
 
+@media (max-width:591px) and (min-width: 515px){
+    .contact-icon {
+        display: none;
+    }
+}
+
 
 .contact-adress {
     margin-top: 60px;
@@ -309,11 +318,18 @@ height: 140px;
 
 .contact-form {
 margin-bottom: 0px;
+padding-top: 80px;
+}
+
+@media (max-width:538px){ 
+    .contact-form {
+        padding-top: 20px;
+    }
 }
 
 .contact-submit {
 margin-bottom: 0px;
-background-color: rgb(141, 51, 51);
+transition: 1s;
 }
 
 .contact-submit:hover,
@@ -326,25 +342,70 @@ background-color: rgb(166,150,146);
     margin-top: 60px;
 }
 
-.google-karte2 {
-    margin-top: 40px;
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(166, 150, 146, 0.63);
+}
+.modalContent {
+    background-color: rgb(255,255,255);
+    margin: 20% auto;
+    padding: 20px;
+    
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.7);
+    animation-name: modalopen;
+    animation-duration: 1s;
 }
 
-@media (max-width:1088px) {
-    .contact-column-karte {
-        display: none;
-    }
-
-    .contact-column {
-        width: 100%;
-    }
+.modalHeader{
+    padding-top: 60px;
+    padding-left: 60px;
+    color: rgb(166,150,146);
+    
 }
 
-@media (min-width:788px) {
-    .google-karte2 {
-        display: none;
-    }
+.modalBody p {
+    margin-bottom:10px;
+    padding-left: 60px;
+    
 }
+
+.modalBody .adress {
+    font-size: 150%;
+    margin-bottom: 0px;
+}
+
+.modalFooter {
+    padding-bottom: 60px;
+}
+
+.closeButton {
+    color: rgb(166,150,146);
+    float: right;
+    font-size: 40px;
+    position: relative;
+    bottom: 65px;
+}
+.closeButton:hover, .close-button:focus {
+    color: rgb(141, 51, 51);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
 
 
 
