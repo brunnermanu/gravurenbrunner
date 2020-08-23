@@ -7,20 +7,19 @@ html body {
 }
 
 p {
-    color: rgb(166,150,146);
+    color: rgb(255, 255, 255);
 }
-
-
-
 
 
 /**
 * Header-Bereich
 */
+
 .header {
     height: 150px;
     background-size: cover;
     background-color: white;
+    
 }
 
 .header-navbar-links {
@@ -72,39 +71,69 @@ p {
     
 }
 
-.brunner {
-    position: relative;
-    left: 10.5px;
-}
 
 .header-brand {
-    color: rgb(141, 51, 51);
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: 260%;
-    display: block;
-    margin-bottom: 50px;
-    font-family: 'Poiret One', cursive;
-    text-align: center;
-}
+    height: 70px;
+    width: auto;
+} 
 .header-brand:hover {
-    color:rgb(166,150,146);
+    cursor: pointer;
+    color: rgb(166,150,146);
+}
+
+@media (max-width:667px) {
+    .header-brand {
+        height: 35px;
+        width: auto;
+        padding-top:8px;
+    }
 }
 
 
 
-.bild-slogan {
-    background-image: url("img/holzhandgravur.jpg");
+.bild-slogan,
+.bild-slogan-beschriftungen,
+.bild-slogan-gravuren,
+.bild-slogan-handgravuren,
+.bild-slogan-vereinspreise {
+
     background-size: cover;
-    background-position: 50% 60%;
     height: 100vh;
     background-attachment: fixed;
+}
 
+.bild-slogan {
+    background-image: url("img/nur Steinbockdunkel.JPG");
+    background-position: 50% 30%;
+}
 
+.bild-slogan-beschriftungen {
+    background-image: url("img/Beschriftungendunkel.jpeg");
+    background-position: 50% 110%;
+    
+}
+.bild-slogan-gravuren {
+    background-image: url("img/Gravurendunkel.jpeg");
+    background-position: 50% 60%;
+
+}
+.bild-slogan-handgravuren {
+    background-image: url("img/Handgravurdunkel.jpeg");
+    background-position: 50% 60%;
+    
+}
+.bild-slogan-vereinspreise {
+    background-image: url("img/SportpreiseZinnwarendunkel.jpeg");
+    background-position: 50% 60%;
+  
 }
 
 @media (max-width:673px) {
-    .bild-slogan {
+.bild-slogan,
+.bild-slogan-beschriftungen,
+.bild-slogan-gravuren,
+.bild-slogan-handgravuren,
+.bild-slogan-vereinspreise {
         margin-top: 30px;
     }
 }
@@ -112,23 +141,38 @@ p {
     color: rgb(166,150,146);
     font-weight: lighter;
     font-family: 'Poiret One', cursive;
-    font-size: 600%;
+    font-size: 750%;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 15%;
 
 }
+
+
+
+@media (max-width:1143px) {
+    .bild-slogan-text {
+        font-size: 600%
+    }
+}
+
 @media (max-width:884px) {
     .bild-slogan-text {
         font-size: 450%;
-        padding-top: 220px;
+        padding-top: 150px;
     }
 }
 
 
+@media (max-width:667px) {
+    .bild-slogan-text {
+        font-size: 300%;
+        padding-top: 130px;
+    }
+}
+
 /**
 * Services
 **/
-
 
 .services {
     background-color: rgb(white);
@@ -159,6 +203,7 @@ p {
 /**
 *.services-title nur für Neben-Seiten
 **/
+
 .services-title {
     color: rgb(166,150,146);
     text-align: center;
@@ -198,7 +243,7 @@ p {
 }
 .team-subheading {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     color: white;
 
 }
@@ -375,6 +420,8 @@ background-color: rgb(166,150,146);
 .modalBody p {
     margin-bottom:10px;
     padding-left: 60px;
+    color: rgb(166,150,146);
+    font-size: 110%;
     
 }
 

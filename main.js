@@ -21,4 +21,4 @@ closeButton.addEventListener('click', closeModal);
 
 setTimeout(function(){ 
     modal.style.display = 'block';    
-}, 60000);
+}, 1000);
