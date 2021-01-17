@@ -10,13 +10,17 @@ p {
     color: rgb(255, 255, 255);
 }
 
+p, li, a {
+    font-size: 20px;
+}
+
 
 /**
 * Header-Bereich
 */
 
 .header {
-    height: 150px;
+    height: 155px;
     background-size: cover;
     background-color: white;
     
@@ -26,30 +30,40 @@ p {
     color: rgb(166,150,146);
     float: right;
     margin-top: 50px;
+    margin-bottom: 0;
+}
 
+.header-navbar-links-small{
+    margin-top: 0;
+    color: rgb(166,150,146);
+    float: right;
 }
 
 @media (max-width:673px) {
     .header-navbar-links {
-        margin-top:30px;
+        margin-top:25px;
     }
 }
-.header-navbar-links a{
+.header-navbar-links a {
     color: rgb(166,150,146);
     text-decoration: none;
     transition: all 0.5s;
-    font-size: 150%;        
+    font-size: 140%;
 }
-
+.header-navbar-links-small a{
+    color: rgb(166,150,146);
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 15px;
+}
 
 #header-navbar-links a:hover {
     text-decoration: none;
     color: rgb(141, 51, 51);
 }
 
-
-
-.header-navbar-links li {
+.header-navbar-links li,
+.header-navbar-links-small li{
     float: left;
     list-style-type: none;
     margin-left: 30px;
@@ -59,10 +73,16 @@ p {
     .header-navbar-links li{
         float: none;
     }
+    .header-navbar-links a{
+        font-size: 20px;
+    }
+    .header-navbar-links-small {
+        display: none;
+    }
 }
 
 .header-brand-wrapper {
-    margin-top: 60px;
+    margin-top: 70px;
     float: left;
     font-weight:bold;
     line-height: 1;
@@ -239,46 +259,50 @@ p {
     font-weight: lighter;
     margin-bottom: 0px;
     text-align: center;
-
 }
 .team-subheading {
     text-align: center;
     margin-bottom: 70px;
     color: white;
-
 }
 
 .team-image-container{
     text-align: center;
 }
 .mitarbeiterfoto {
-    max-width: 52%;
-   
+    width: 250px;
+    height: 250px;
     border-radius: 10000px;
     border: 5px solid rgb(255, 255, 255);
 }
-.mitarbeiername{
+.mitarbeitername {
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: center;
     color: white;
     font-weight: bold;
-
-
 }
 .mitarbeiterberuf {
     text-align: center;
     color: white;
     font-weight: lighter;
-
 }
 
+.firstline {
+    margin-bottom: 0px;
+}
+.patricia {
+    /*text-align: center;*/
+}
+.patricia-team-heading {
+    margin: 60px 0;
+    text-align: center;
+}
 .schlusstext{
     text-align: center;
     margin-top: 70px;
     margin-bottom: 0px;
     color: white;
-
 }
 
 /**
@@ -297,7 +321,6 @@ p {
 .contact-heading {
     margin-bottom:15px;
     font-weight: lighter;
-
 }
 .contact-subheading {
     color:rgb(141, 51, 51);
@@ -314,11 +337,16 @@ p {
     width: 100%;
     font-weight: lighter;
     height: 2.5em;
-
-
 }
 .contact-methods li .fa {
     font-size: 150%;
+}
+.contact-methods a {
+    color: rgb(141, 51, 51);
+}
+.contact-methods a:hover {
+    color: rgb(166,150,146);
+
 }
 .contact-icon {
     display: inline-block;
@@ -331,8 +359,6 @@ p {
         display: none;
     }
 }
-
-
 .contact-adress {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -348,7 +374,6 @@ p {
     margin-bottom: 27px;
     color: black;
     background-color: white;
-    
 }
 
 .contact-input:focus,
@@ -386,7 +411,6 @@ background-color: rgb(166,150,146);
 .google-karte {
     margin-top: 60px;
 }
-
 
 .modal {
     display: none;
@@ -452,7 +476,21 @@ background-color: rgb(166,150,146);
     to {opacity: 1}
 }
 
+@media (max-width:667px) {
 
+    .modalHeader {
+        padding-top: 20px;
+        padding-left: 20px;
+        color: rgb(166,150,146);
+        font-size: 100%;
+
+    }
+
+    .modalBody p {
+        padding-left: 20px;
+        font-size: 90%;
+    }
+}
 
 
 
