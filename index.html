@@ -12,25 +12,25 @@
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,300i,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    
+    <script src="https://kit.fontawesome.com/a40be90a8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header-brand-wrapper">
-                <a href="index.html">
-                    <img src="img/LogoGravurenBrunnerbordo.jpg" class="header-brand" alt="Logo">
-                </a>
-            </div>
-            <nav class="header-navbar">
-                <ul class="header-navbar-links" id="header-navbar-links">
-                    <li><a href="#produkte">Produkte</a></li>
-                    <li><a href="#team">Über uns</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
+        <div class="header-brand-wrapper">
+            <a href="index.html">
+                <img src="img/LogoGravurenBrunnerbordo.jpg" class="header-brand" alt="Logo">
+            </a>
         </div>
-       
+        <nav class="header-navbar">
+            <ul class="header-navbar-links" id="header-navbar-links">
+                <li><a href="#produkte">Produkte</a></li>
+                <li><a href="#team">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <ul class="header-navbar-links-small">
+                <li><a href="#infos">Infobox</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="bild-slogan">
@@ -142,8 +142,7 @@
                     </li>
                 </ul>
                 <div class="contact-öffnungszeiten">
-                    <h5>COVID: Unsere Werkstatt ist geöffnet!</h5>
-                    <p>Öffnungszeiten:</p>
+                    <h5>Öffnungszeiten:</h5>
                     <p>Montag geschlossen (auswärtige Termine)</p>
                     <p>Di - Fr 08:00 - 12:00 / 14:00 - 18:00</p>
                     <p>Samstag nach Vereinbarung</p>
@@ -155,7 +154,19 @@
                 </div>  
             </div>
             
-            <div class="six columns">
+            <div id="infos" class="contact-column six columns infobox">
+                <h3 class="contact-heading"><strong>Infobox</strong></h3>
+
+                <div class="contact-öffnungszeiten">
+                    <h5>Abwesenheiten:</h5>
+                    <h6 class="holiday">Betriebsferien:</h6>
+                    <p> Sa, 17.07. bis und mit Mo, 16.08.21</p>
+                    <h6 class="holiday">Brücke an Maria-Empfängnis:</h6>
+                    <p> Mo, 06.12. bis und mit Mi, 08.12.21</p>
+                    <h6 class="holiday">Weihnachtsferien:</h6>
+                    <p> Fr, 24.12.21 bis und mit Mo, 10.01.22</p>
+                </div>
+
 <!-- Formular und Modal werden erst nach dem Umzug der Firma benötigt
 
                 <form class="contact-form" action="https://formspree.io/brunner.info@gravurenbrunner.ch" method="POST">
@@ -168,12 +179,12 @@
                     <div class="modalContent">
                         <div class="modalHeader">
                             <span class="closeButton">&times;</span>
-                            <h3>Coronavirus: Unsere Werkstatt ist geöffnet!</h3>
+                            <h3>Betriebsferien bis und mit Montag, 16.08.21</h3>
+                            <p>Gerne sind wir ab Dienstag, 17.08.21 wieder für Sie da.</p>
                         </div>
                         <div class="modalBody">
-                            <p>Gerne nehmen wir Aufträge auch per Telefon oder E-Mail entgegen.</p>
-                            <p>Nach Absprache ist die Abholung von kleineren Bestellungen kontaktlos möglich.</p>
-                            <p>Angaben zu unseren Öffnungszeiten sowie Telefon und E-Mail finden Sie unter "Kontakt".</p>
+                            <p>Alle Abwesenheiten finden Sie in der Infobox.</p>
+                            <p>Direkt zur <a href="#infos">Infobox</a></p>
                         </div>
                         <div class="modalFooter">
                         </div>

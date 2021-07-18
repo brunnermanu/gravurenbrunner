@@ -6,9 +6,9 @@ html body {
     font-family: 'Muli', sans-serif;
 }
 
-p {
-    color: rgb(255, 255, 255);
-}
+/*p {*/
+/*    color: rgb(255, 255, 255);*/
+/*}*/
 
 p, li, a {
     font-size: 20px;
@@ -23,7 +23,15 @@ p, li, a {
     height: 155px;
     background-size: cover;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
+}
+
+.header-navbar {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-navbar-links {
@@ -31,52 +39,56 @@ p, li, a {
     float: right;
     margin-top: 50px;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.header-navbar-links-small{
+.header-navbar-links-small {
     margin-top: 0;
     color: rgb(166,150,146);
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-@media (max-width:673px) {
-    .header-navbar-links {
-        margin-top:25px;
-    }
-}
 .header-navbar-links a {
     color: rgb(166,150,146);
     text-decoration: none;
     transition: all 0.5s;
     font-size: 140%;
 }
-.header-navbar-links-small a{
+.header-navbar-links-small a {
     color: rgb(166,150,146);
     text-decoration: none;
     transition: all 0.5s;
     font-size: 15px;
 }
 
-#header-navbar-links a:hover {
+.header-navbar-links a:hover,
+.header-navbar-links-small a:hover {
     text-decoration: none;
     color: rgb(141, 51, 51);
 }
 
 .header-navbar-links li,
-.header-navbar-links-small li{
+.header-navbar-links-small li {
     float: left;
     list-style-type: none;
     margin-left: 30px;
 }
 
 @media (max-width:673px) {
-    .header-navbar-links li{
-        float: none;
+    .header-navbar-links {
+        margin-top:25px;
+        flex-direction: column;
     }
-    .header-navbar-links a{
+    .header-navbar-links a {
         font-size: 20px;
     }
-    .header-navbar-links-small {
+    #header-navbar-links-small {
         display: none;
     }
 }
@@ -109,14 +121,11 @@ p, li, a {
     }
 }
 
-
-
 .bild-slogan,
 .bild-slogan-beschriftungen,
 .bild-slogan-gravuren,
 .bild-slogan-handgravuren,
 .bild-slogan-vereinspreise {
-
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -282,6 +291,9 @@ p, li, a {
     color: white;
     font-weight: bold;
 }
+.mitarbeitername p {
+    color: white;
+}
 .mitarbeiterberuf {
     text-align: center;
     color: white;
@@ -353,7 +365,10 @@ p, li, a {
     width: 40px;
     text-align: center;
 }
-
+.infobox {
+    border: solid 1px rgb(141, 51, 51);
+    padding: 20px;
+}
 @media (max-width:591px) and (min-width: 515px){
     .contact-icon {
         display: none;
@@ -368,6 +383,13 @@ p, li, a {
     color: rgb(141, 51, 51);
     font-weight: lighter;
     margin-bottom: 0px;
+}
+.contact-öffnungszeiten {
+    margin-bottom: 20px;
+}
+.holiday {
+    margin-bottom: 0;
+    margin-top: 15px;
 }
 .contact-input {
     width: 100%;
@@ -438,7 +460,6 @@ background-color: rgb(166,150,146);
     padding-top: 60px;
     padding-left: 60px;
     color: rgb(166,150,146);
-    
 }
 
 .modalBody p {
