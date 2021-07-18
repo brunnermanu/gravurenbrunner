@@ -26,7 +26,7 @@ p, li, a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+
 }
 
 .header-navbar {
@@ -38,34 +38,21 @@ p, li, a {
     color: rgb(166,150,146);
     float: right;
     margin-top: 50px;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+
 }
 
-.header-navbar-links-small {
-    margin-top: 0;
-    color: rgb(166,150,146);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+@media (max-width:673px) {
+    .header-navbar-links {
+        margin-top:30px;
+    }
 }
-
-.header-navbar-links a {
+.header-navbar-links a{
     color: rgb(166,150,146);
     text-decoration: none;
     transition: all 0.5s;
     font-size: 140%;
 }
-.header-navbar-links-small a {
-    color: rgb(166,150,146);
-    text-decoration: none;
-    transition: all 0.5s;
-    font-size: 15px;
-}
+
 
 .header-navbar-links a:hover,
 .header-navbar-links-small a:hover {
@@ -73,8 +60,9 @@ p, li, a {
     color: rgb(141, 51, 51);
 }
 
-.header-navbar-links li,
-.header-navbar-links-small li {
+
+
+.header-navbar-links li {
     float: left;
     list-style-type: none;
     margin-left: 30px;
@@ -94,7 +82,7 @@ p, li, a {
 }
 
 .header-brand-wrapper {
-    margin-top: 70px;
+    margin-top: 60px;
     float: left;
     font-weight:bold;
     line-height: 1;
@@ -121,11 +109,14 @@ p, li, a {
     }
 }
 
+
+
 .bild-slogan,
 .bild-slogan-beschriftungen,
 .bild-slogan-gravuren,
 .bild-slogan-handgravuren,
 .bild-slogan-vereinspreise {
+
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -268,6 +259,7 @@ p, li, a {
     font-weight: lighter;
     margin-bottom: 0px;
     text-align: center;
+
 }
 .team-subheading {
     text-align: center;
@@ -290,9 +282,8 @@ p, li, a {
     text-align: center;
     color: white;
     font-weight: bold;
-}
-.mitarbeitername p {
-    color: white;
+
+
 }
 .mitarbeiterberuf {
     text-align: center;
