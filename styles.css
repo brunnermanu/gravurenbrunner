@@ -37,7 +37,6 @@ p, li, a {
 
 .header-navbar-links {
     color: rgb(166,150,146);
-    margin-top: 50px;
     margin-bottom:0;
     display: flex;
     flex-direction: row;
